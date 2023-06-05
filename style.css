@@ -1,153 +1,108 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     background: #091921;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
 }
-.clock{
-    width: 350px;
-    height: 350px;
+
+.clock {
+    width: 800px;
+    height: 800px;
+    margin-top: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url('https://kartinkin.net/uploads/posts/2022-12/1670520128_34-kartinkin-net-p-kartinka-chasi-so-strelkami-instagram-46.jpg') center / cover;
+    background: url('./Фон.png') center / cover;
     border: 4px solid #091921;
     border-radius: 50%;
     box-shadow: 0 -15px 15px rgba(255, 255, 255, 0.05),
-    inset 0 -15px 15px rgba(255, 255, 255, 0.05),
-    0 15px 15px rgba(0, 0, 0, 0.3),
-    inset 0 15px 15px rgba(0, 0, 0, 0.3);
+        inset 0 -15px 15px rgba(255, 255, 255, 0.05),
+        0 15px 15px rgba(0, 0, 0, 0.3),
+        inset 0 15px 15px rgba(0, 0, 0, 0.3);
     position: relative;
 }
+
 .clock::before {
     content: '';
-     width: 10px;
-     height: 10px;
-     position: absolute;
-     border-radius: 50%;
-     background: #fff;
-     z-index: 15;
- }
-.hour{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    border-radius: 50%;
+    background: #fff;
+    z-index: 15;
+}
+
+.hour {
     position: absolute;
 }
-.hours{
-    width: 160px;
-    height: 160px;
+
+.hours {
+    height: 240px;
     display: flex;
     justify-content: center;
     position: relative;
     border-radius: 50%;
-
     transform: none;
 }
-.hours::before{
+
+.hours::before {
     content: '';
     position: absolute;
     width: 8px;
-    height: 80px;
+    height: 120px;
     background-color: #ff1018;
     z-index: 10;
     border-radius: 6px 6px 0px 0px;
 }
-.minut{
+
+.minut {
     position: absolute;
 }
-.minuts{
-    width: 180px;
-    height: 180px;
+
+.minuts {
+    height: 320px;
     display: flex;
     justify-content: center;
     position: relative;
     border-radius: 50%;
 }
-.minuts::before{
+
+.minuts::before {
     content: '';
     width: 5px;
-    height: 90px;
+    height: 160px;
     background-color: #fff;
     border-radius: 6px 6px 0px 0px;
     position: absolute;
     border: 0.5px solid #333;
     z-index: 11;
 }
-.second{
+
+.second {
     position: absolute;
 }
-.seconds{
-    width: 215px;
-    height: 215px;
+
+.seconds {
+    height: 400px;
     display: flex;
     justify-content: center;
     position: relative;
- 
 }
-.seconds::before{
+
+.seconds::before {
     content: '';
     width: 2px;
-    height: 135px;
+    height: 200px;
     background-color: #fff;
     border-radius: 6px 6px 0px 0px;
     border: 0.5px solid #333;
     position: absolute;
     z-index: 12;
-}
-.full{
-    display: flex;
-    flex-direction: column;
-}
-.hourTime{
-    display: flex;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    padding: 50px 25px 50px 25px;
-    background-color: #08141b;
-    border: 4px solid #091921;
-    box-shadow: 0 -15px 15px rgba(255, 255, 255, 0.05),
-    inset 0 -15px 15px rgba(255, 255, 255, 0.05),
-    0 15px 15px rgba(0, 0, 0, 0.3),
-    inset 0 15px 15px rgba(0, 0, 0, 0.3);
-    position: relative;
-    width: 120px;
-}
-.minutTime{
-    display: flex;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    padding: 50px 25px 50px 25px;
-    background-color: #08141b;
-    border: 4px solid #091921;
-    box-shadow: 0 -15px 15px rgba(255, 255, 255, 0.05),
-    inset 0 -15px 15px rgba(255, 255, 255, 0.05),
-    0 15px 15px rgba(0, 0, 0, 0.3),
-    inset 0 15px 15px rgba(0, 0, 0, 0.3);
-    position: relative;
-    width: 120px;
-}
-.secondTime{
-    display: flex;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    padding: 50px 25px 50px 25px;
-    background-color: #08141b;
-    border: 4px solid #091921;
-    box-shadow: 0 -15px 15px rgba(255, 255, 255, 0.05),
-    inset 0 -15px 15px rgba(255, 255, 255, 0.05),
-    0 15px 15px rgba(0, 0, 0, 0.3),
-    inset 0 15px 15px rgba(0, 0, 0, 0.3);
-    position: relative;
-    width: 120px;
-}
-.times{
-    display: flex;
-    color: #fff;
-    font-size: 4rem;
- 
-
 }
